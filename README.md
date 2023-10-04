@@ -1,2 +1,10 @@
 # ProjetoAMS-LESI
-Projeto da disciplina de AMS 
+## Sprint01
+* Project Vision
+  * Problem description
+  * Business goals and benefits
+  * Stakeholders description
+  * Context diagram
+  * Actors
+  * High level features by component
+### Project Vision
