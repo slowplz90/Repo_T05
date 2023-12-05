@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/Front-End/style.css" />
+    <title>IPCA Residence</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logoipca.png" width="160" height="50" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Start Header form -->
+    <div class="container">
+      <div class="text-center pt-5">
+        <img
+          src="/images/maintenance.png"
+          alt="network-logo"
+          width="280"
+          height="72"
+        />
+        <h2>Maintenance ticket report</h2>
+        <p>Fill in the following form below according to your needs</p>
+      </div>
+      <!-- End Header form -->
+
+      <!-- Start Card -->
+      <div class="card">
+        <!-- Start Card Body -->
+        <div class="card-body">
+          <!-- Start Form -->
+          <form
+            id="bookingForm"
+            action="#"
+            method=""
+            class="needs-validation"
+            novalidate
+            autocomplete="off"
+          >
+            <!-- Start Input Name -->
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <small class="form-text text-muted">Please fill your name</small>
+            </div>
+            <!-- End Input Name -->
+
+            <!-- Start Input Email -->
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                name="email"
+                placeholder="Enter email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+              <small class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <!-- End Input Email -->
+
+            <!-- Start Input Telephone -->
+            <div class="form-group">
+              <label for="inputPhone">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhone"
+                name="phone"
+                placeholder="(+351)9xxxxxxxx"
+                pattern="\d{3}\d{3}\d{4}"
+                required
+              />
+              <small class="form-text text-muted"
+                >We'll never share your phone number with anyone else.</small
+              >
+            </div>
+            <!-- End Input Telephone -->
+
+            <!-- Start Input Date , Start Time and End Time -->
+            <div class="form-row">
+              <!-- Start Input Date -->
+              <div class="form-group col-md-4">
+                <label for="inputDate">Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="inputDate"
+                  name="date"
+                  required
+                />
+                <small class="form-text text-muted"
+                  >Please choose date and time.</small
+                >
+              </div>
+              <!-- End Input Date -->
+              <!-- Start Room Input -->
+              <div class="form-group col-md-4">
+                <label>Maintenance type</label>
+                <div class="dropdown w-auto">
+                  <button
+                    class="btn dropdown-toggle min-width-0"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Select an option
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Eletrical problems</a>
+                    <a class="dropdown-item" href="#">Water Inflitration</a>
+                    <a class="dropdown-item" href="#"
+                      >Broken or damaged parts</a
+                    >
+                    <a class="dropdown-item" href="#">Others</a>
+                  </div>
+                </div>
+                <small class="form-text text-muted"
+                  >Choose the maintenance type.</small
+                >
+              </div>
+              <!-- End Room Input -->
+              <!-- Start Room Input -->
+              <div class="form-group col-md-4">
+                <label>Room Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputSnack1"
+                  name="snack1"
+                  required
+                />
+                <small class="form-text text-muted"
+                  >Insert your room number.</small
+                >
+              </div>
+              <!-- End Room Input -->
+            </div>
+            <!-- End Input Date , Start Time and End Time -->
+
+            <!-- Start Input Remark -->
+            <div class="form-group">
+              <label for="textAreaRemark">Description</label>
+              <textarea
+                class="form-control"
+                name="remark"
+                id="textAreaRemark"
+                rows="2"
+                placeholder="Give us "
+                required
+              ></textarea>
+            </div>
+            <!-- End Input Remark -->
+
+            <!-- Start Submit Button -->
+            <button
+              class="btn btn-primary btn-block"
+              type="submit"
+              style="background-color: #12874e; border-color: #12874e"
+            >
+              Submit
+            </button>
+            <!-- End Submit Button -->
+          </form>
+          <!-- End Form -->
+        </div>
+        <!-- End Card Body -->
+      </div>
+      <!-- End Card -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
