@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Front-End/style.css" />
+    <title>IPCA Residence</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logoipca.png" width="160" height="50" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              Sign out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start Header form -->
+    <div class="container">
+      <div class="text-center">
+        <img
+          src="/images/dormsbanner.jpg"
+          alt="network-logo"
+          width="280"
+          height="250"
+        />
+        <h2>Room Application</h2>
+        <p>Fill in the following form below according to your needs</p>
+      </div>
+      <!-- End Header form -->
+
+      <!-- Start Card -->
+      <div class="card">
+        <!-- Start Card Body -->
+        <div class="card-body">
+          <!-- Start Form -->
+          <hr
+            id="bookingForm"
+            action="#"
+            method=""
+            class="needs-validation"
+            novalidate
+            autocomplete="off"
+          />
+          <!-- Start Input Name -->
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+            <small class="form-text text-muted">Please fill your name</small>
+          </div>
+          <!-- End Input Name -->
+
+          <!-- Start Input Email -->
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              name="email"
+              placeholder="Enter email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required
+            />
+            <small class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+          </div>
+          <!-- End Input Email -->
+
+          <!-- Start Input Telephone -->
+          <div class="form-group">
+            <label for="inputPhone">Phone</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="inputPhone"
+              name="phone"
+              placeholder="(+351)9xxxxxxxx"
+              pattern="\d{3}\d{3}\d{4}"
+              required
+            />
+            <small class="form-text text-muted">
+              We'll never share your phone number with anyone else.
+            </small>
+          </div>
+          <!-- End Input Telephone -->
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label>Your age</label>
+              <input
+                type="number"
+                class="form-control"
+                id="inputage"
+                name="age"
+                required
+              />
+              <small class="form-text text-muted">Insert your age.</small>
+            </div>
+
+            <!-- Start Gender Type -->
+            <div class="form-group">
+              <legend class="col-form-label pt-0">Gender</legend>
+              <div class="form-check form-check-inline col-md-3">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="inlineRadioType1"
+                  name="gender1"
+                  value="gender1"
+                  required
+                />
+                <label class="form-check-label" for="inlineRadioType1">
+                  Masculine
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="inlineRadioType2"
+                  name="gender2"
+                  value="gender2"
+                  required
+                />
+                <label class="form-check-label" for="inlineRadioType2">
+                  Feminine
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="inlineRadioType3"
+                  name="roomType"
+                  value="type3"
+                  required
+                />
+                <label class="form-check-label" for="inlineRadioType3">
+                  Undefined
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="inlineRadioType4"
+                  name="roomType"
+                  value="type4"
+                  required
+                />
+                <label class="form-check-label" for="inlineRadioType4">
+                  Other
+                </label>
+              </div>
+            </div>
+            <!-- End Gender -->
+          </div>
+
+          <div class="form-row"></div>
+
+          <!-- Start Input Date , Start Time and End Time -->
+          <div class="form-row">
+            <!-- Start Input Date -->
+            <div class="form-group col-md-4">
+              <label for="inputDate">Start Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDate"
+                name="date"
+                required
+              />
+              <small class="form-text text-muted">
+                Please choose date and time.
+              </small>
+            </div>
+            <!-- End Input Date -->
+
+            <div class="form-group col-md-4">
+              <label for="inputDate">End Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="inputDate"
+                name="date"
+                required
+              />
+              <small class="form-text text-muted">
+                Please choose date and time..
+              </small>
+            </div>
+          </div>
+          <!-- End Input Date , Start Time and End Time -->
+
+          <hr />
+
+          <div class="layout-box">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <img src="/images/dorms.jpg" class="layout-image" />
+                <div class="radio radio-adjust">
+                  <label>
+                    <input type="radio" name="layout-radio" />
+                    Quarto individual
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <img src="/images/dorms.jpg" class="layout-image" />
+                <div class="radio radio-adjust">
+                  <label>
+                    <input type="radio" name="layout-radio" />
+                    Quarto Duplo
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <img src="/images/dorms.jpg" class="layout-image" />
+                <div class="radio radio-adjust">
+                  <label>
+                    <input type="radio" name="layout-radio" />
+                    Quarto quadruplo
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start Input Remark -->
+          <div class="form-group">
+            <label for="textAreaRemark">Description</label>
+            <textarea
+              class="form-control"
+              name="remark"
+              id="textAreaRemark"
+              rows="2"
+              placeholder="Give us "
+              required
+            ></textarea>
+          </div>
+          <!-- End Input Remark -->
+
+          <!-- Start Submit Button -->
+          <button
+            class="btn btn-primary btn-block"
+            type="submit"
+            style="background-color: #12874e; border-color: #12874e"
+          >
+            Submit
+          </button>
+          <!-- End Submit Button -->
+        </div>
+        <!-- End Card Body -->
+      </div>
+      <!-- End Card -->
+    </div>
+  </body>
+</html>
