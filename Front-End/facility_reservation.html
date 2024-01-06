@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/Front-End/style.css">
+    <title>IPCA Residence</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+        <img src="/images/logoipca.png" width="160" height="50" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bed"></i> Manage Room</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-ticket-alt"></i> Tickets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Start Header form -->
+<div class="container">
+    <div class="text-center pt-5">
+        <img
+                src="/images/Hang%20out-cuate.png"
+                alt="network-logo"
+                width="300"
+                height="200"
+        />
+        <h2>Facility Reservation</h2>
+        <p>Fill in the following form below according to your needs</p>
+    </div>
+    <!-- End Header form -->
+
+    <!-- Start Card -->
+    <div class="card">
+        <!-- Start Card Body -->
+        <div class="card-body">
+            <!-- Start Form -->
+            <form
+                    id="bookingForm"
+                    action="#"
+                    method=""
+                    class="needs-validation"
+                    novalidate
+                    autocomplete="off"
+            >
+                <!-- Start Input Telephone -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPhone">Phone</label>
+                        <input
+                                type="tel"
+                                class="form-control"
+                                id="inputPhone"
+                                name="phone"
+                                placeholder="(+351)9xxxxxxxx"
+                                pattern="\d{3}\d{3}\d{4}"
+                                required
+                        />
+                        <small class="form-text text-muted">
+                            We'll never share your phone number with anyone else.
+                        </small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="form-label" for="typeNumber">Number of people</label>
+                        <input type="number" id="typeNumber2" class="form-control"/>
+                        <small class="form-text text-muted">
+                            Choose the number of people.
+                        </small>
+                    </div>
+                </div>
+                <!-- End Input Telephone -->
+
+                <!-- Start Input Date , Start Time and End Time -->
+                <div class="form-row">
+                    <!-- Start Input Date -->
+                    <div class="form-group col-md-4">
+                        <label for="inputDate">Date</label>
+                        <input
+                                type="date"
+                                class="form-control"
+                                id="inputDate"
+                                name="date"
+                                required
+                        />
+                        <small class="form-text text-muted">
+                            Please choose date.
+                        </small>
+                    </div>
+                    <!-- End Input Date -->
+                    <!-- Start Input Hour -->
+                    <div class="form-group col-md-4">
+                        <label for="inputHour">Hour</label>
+                        <input
+                                type="time"
+                                class="form-control"
+                                id="inputHour"
+                                name="Hour"
+                                required
+                        />
+                        <small class="form-text text-muted">
+                            Please choose time.
+                        </small>
+                    </div>
+                    <!-- End Input Hour -->
+                    <!-- Start Input Number hours -->
+                    <div class="form-group col-md-4">
+                        <label class="form-label" for="typeNumber">Staying time</label>
+                        <input type="number" id="typeNumber" class="form-control"/>
+                        <small class="form-text text-muted">
+                            Choose the number of hours.
+                        </small>
+                    </div>
+                    <!-- End Input Number hours-->
+                </div>
+                <!-- End Input Date , Start Time and End Time -->
+                <hr>
+
+                <div class="layout-box">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <img src="/images/studyroom.jpg" class="layout-image"/>
+                            <div class="radio radio-adjust">
+                                <label>
+                                    <input type="radio" name="layout-radio"/>
+                                    Study room
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <img src="/images/common_lounge.jpg" class="layout-image"/>
+                            <div class="radio radio-adjust">
+                                <label>
+                                    <input type="radio" name="layout-radio"/>
+                                    Common Lounge
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <img src="/images/recreative_space.jpg" class="layout-image"/>
+                            <div class="radio radio-adjust">
+                                <label>
+                                    <input type="radio" name="layout-radio"/>
+                                    Recreative space
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start Submit Button -->
+                <button
+                        class="btn btn-primary btn-block"
+                        type="submit"
+                        style="background-color: #12874e; border-color: #12874e"
+                >
+                    Submit
+                </button>
+                <!-- End Submit Button -->
+            </form>
+            <!-- End Form -->
+        </div>
+        <!-- End Card Body -->
+    </div>
+    <!-- End Card -->
+</div>
+
+
+</body>
+</html>
